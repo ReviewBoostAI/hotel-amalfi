@@ -1299,3 +1299,170 @@ a:visited{
   display:flex;
   flex-direction:column;
 }
+/* =========================
+MOBILE RESPONSIVE FINAL
+========================= */
+
+@media (max-width:900px){
+
+  /* NAVBAR */
+
+  .navbar{
+    padding:0 20px;
+    height:82px;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  .nav-links{
+    width:100%;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+
+  .nav-links a{
+    font-size:14px;
+  }
+
+  .nav-book-btn{
+    padding:12px 22px;
+    font-size:14px;
+  }
+
+  .logo h2{
+    font-size:42px;
+  }
+
+  .city{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  /* HERO */
+
+  .hero-content{
+    width:92%;
+    padding:0 10px;
+  }
+
+  .hero-content h1{
+    font-size:68px;
+  }
+
+  .hero-content p{
+    font-size:14px;
+    letter-spacing:4px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero-btn,
+  .hero-outline{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+  }
+
+  /* TITLES */
+
+  .welcome h2,
+  .gallery-section h2,
+  .faq-section h2,
+  .services h2,
+  .packages h2,
+  .rooms-section h2,
+  .hotel-text h2,
+  .cta-box h2,
+  .rules-section h2,
+  .map-section h2{
+    font-size:46px;
+  }
+
+  /* WIDTH FIX */
+
+  .gallery-grid,
+  .faq-container,
+  .contact-card,
+  .cta-box,
+  .welcome-box,
+  .footer-container,
+  .hotel-container,
+  .services-grid,
+  .rooms-grid,
+  .rules-container,
+  .map-box,
+  .cards,
+  .booking-box{
+    width:92%;
+  }
+
+  /* GRIDS */
+
+  .gallery-grid,
+  .services-grid,
+  .rooms-grid,
+  .rules-container{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:100%;
+    max-width:420px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hotel-container{
+    flex-direction:column;
+    gap:35px;
+  }
+
+  /* CTA */
+
+  .cta-box{
+    padding:55px 30px;
+  }
+
+  .cta-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  /* FOOTER */
+
+  .footer-container{
+    flex-direction:column;
+    gap:35px;
+  }
+
+  .footer{
+    text-align:center;
+  }
+
+  /* BOOKING */
+
+  .booking-box{
+    padding:35px 25px;
+  }
+
+  .booking-box h2{
+    font-size:42px;
+  }
+
+  .booking-form input,
+  .booking-form textarea{
+    font-size:16px;
+  }
+
+}
