@@ -1466,3 +1466,54 @@ MOBILE RESPONSIVE FINAL
   }
 
 }
+/* MOBILE MENU */
+
+.hamburger{
+  display:none;
+  background:none;
+  border:none;
+  color:#d4a021;
+  font-size:34px;
+  cursor:pointer;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+@media(max-width:900px){
+
+  .nav-links,
+  .nav-book-btn{
+    display:none;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .mobile-menu{
+    position:absolute;
+    top:82px;
+    right:20px;
+    width:240px;
+    background:rgba(10,20,35,.96);
+    border-radius:18px;
+    padding:22px;
+    display:none;
+    flex-direction:column;
+    gap:18px;
+    box-shadow:0 18px 40px rgba(0,0,0,.2);
+  }
+
+  .mobile-menu.active{
+    display:flex;
+  }
+
+  .mobile-menu a{
+    color:#d4a021;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+  }
+}

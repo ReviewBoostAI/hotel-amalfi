@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function Navbar() {
+
+  const [menuOpen,setMenuOpen] = useState(false)
 
   return (
 
@@ -17,7 +20,6 @@ function Navbar() {
 
         <h2>
           AMALFI
-
           <span className="stars">
             ★★★
           </span>
@@ -28,6 +30,8 @@ function Navbar() {
         </div>
 
       </Link>
+
+      {/* DESKTOP */}
 
       <div className="nav-links">
 
@@ -63,6 +67,90 @@ function Navbar() {
       >
         Prenota
       </Link>
+
+      {/* MOBILE HAMBURGER */}
+
+      <button
+        className="hamburger"
+        onClick={() =>
+          setMenuOpen(!menuOpen)
+        }
+      >
+        ☰
+      </button>
+
+      <div
+        className={
+          menuOpen
+            ? 'mobile-menu active'
+            : 'mobile-menu'
+        }
+      >
+
+        <Link
+          to="/"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          Home
+        </Link>
+
+        <Link
+          to="/hotel"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          Hotel
+        </Link>
+
+        <Link
+          to="/camere"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          Camere
+        </Link>
+
+        <Link
+          to="/ristomusicbar"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          RistoMusicBar
+        </Link>
+
+        <Link
+          to="/prezzi"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          Prezzi
+        </Link>
+
+        <Link
+          to="/arrivare"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          Arrivare
+        </Link>
+
+        <Link
+          to="/?scroll=preventivo"
+          onClick={() =>
+            setMenuOpen(false)
+          }
+        >
+          Prenota
+        </Link>
+
+      </div>
 
     </nav>
 
