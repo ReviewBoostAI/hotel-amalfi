@@ -6,6 +6,9 @@ import {
 import {
   useEffect
 } from 'react'
+import {
+  useTranslation
+} from 'react-i18next'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -14,16 +17,19 @@ function Home() {
 
   const location = useLocation()
 
+  const { t } = useTranslation()
+
   useEffect(() => {
 
-    const params = new URLSearchParams(
-      location.search
-    )
+    const params =
+      new URLSearchParams(
+        location.search
+      )
 
-    if (
+    if(
       params.get('scroll')
       === 'preventivo'
-    ) {
+    ){
 
       setTimeout(() => {
 
@@ -42,7 +48,9 @@ function Home() {
   },[location])
 
   return (
+
     <>
+
       <Navbar />
 
       {/* HERO */}
@@ -51,9 +59,10 @@ function Home() {
         className="hero"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=80&w=2000&auto=format&fit=crop')"
+          "url('https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=80&w=2000&auto=format&fit=crop')"
         }}
       >
+
         <div className="overlay">
 
           <div className="hero-content">
@@ -63,12 +72,12 @@ function Home() {
             </span>
 
             <h1>
-              Hotel
+              {t('heroTitle')}
               <span> Amalfi</span>
             </h1>
 
             <p>
-              JESOLO • VENEZIA
+              {t('heroLocation')}
             </p>
 
             <div className="hero-buttons">
@@ -77,14 +86,14 @@ function Home() {
                 to="/?scroll=preventivo"
                 className="hero-btn"
               >
-                Prenota al Miglior Prezzo
+                {t('heroBook')}
               </Link>
 
               <Link
                 to="/hotel"
                 className="hero-outline"
               >
-                Scopri l'Hotel
+                {t('heroDiscover')}
               </Link>
 
             </div>
@@ -92,13 +101,16 @@ function Home() {
           </div>
 
           <div className="dots">
+
             <div className="dot"></div>
             <div className="dot active"></div>
             <div className="dot"></div>
             <div className="dot"></div>
+
           </div>
 
         </div>
+
       </section>
 
       {/* WELCOME */}
@@ -108,14 +120,17 @@ function Home() {
         <div className="welcome-box">
 
           <h2>
-            Benvenuti all'
-            <span> Hotel Amalfi</span>
+
+            {t('welcomeTitle')}
+
+            <span>
+              {t('welcomeHotel')}
+            </span>
+
           </h2>
 
           <p>
-            Un hotel accogliente nel cuore di Jesolo,
-            perfetto per vacanze tra mare, relax
-            e ospitalità italiana.
+            {t('welcomeText')}
           </p>
 
         </div>
@@ -127,42 +142,64 @@ function Home() {
       <section className="services">
 
         <h2>
-          I Nostri
-          <span> Servizi</span>
+
+          {t('services')}
+
+          <span>
+            {' '}
+            {t('services2')}
+          </span>
+
         </h2>
 
         <div className="services-grid">
 
           <div className="service-card">
-            <h3>Wi-Fi</h3>
+
+            <h3>
+              {t('wifi')}
+            </h3>
+
             <p>
-              Connessione gratuita
-              in tutta la struttura.
+              {t('wifiText')}
             </p>
+
           </div>
 
           <div className="service-card">
-            <h3>Spiaggia</h3>
+
+            <h3>
+              {t('beach')}
+            </h3>
+
             <p>
-              Posto spiaggia
-              incluso nei pacchetti.
+              {t('beachText')}
             </p>
+
           </div>
 
           <div className="service-card">
-            <h3>Parcheggio</h3>
+
+            <h3>
+              {t('parking')}
+            </h3>
+
             <p>
-              Disponibile
-              per i clienti hotel.
+              {t('parkingText')}
             </p>
+
           </div>
 
           <div className="service-card">
-            <h3>Ristorante</h3>
+
+            <h3>
+              {t('restaurant')}
+            </h3>
+
             <p>
-              Cucina italiana
-              e atmosfera rilassata.
+              {t('restaurantText')}
             </p>
+
           </div>
 
         </div>
@@ -174,40 +211,67 @@ function Home() {
       <section className="gallery-section">
 
         <h2>
-          Scopri
-          <span> Amalfi</span>
+
+          {t('gallery')}
+
+          <span>
+            {' '}
+            {t('gallery2')}
+          </span>
+
         </h2>
 
         <div className="gallery-grid">
 
           <div className="gallery-card">
+
             <img
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
               alt="Hotel"
             />
+
             <div className="gallery-overlay">
-              <h3>Hotel</h3>
+
+              <h3>
+                {t('galleryHotel')}
+              </h3>
+
             </div>
+
           </div>
 
           <div className="gallery-card">
+
             <img
               src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
               alt="Camera"
             />
+
             <div className="gallery-overlay">
-              <h3>Camere</h3>
+
+              <h3>
+                {t('galleryRooms')}
+              </h3>
+
             </div>
+
           </div>
 
           <div className="gallery-card">
+
             <img
               src="https://images.unsplash.com/photo-1559339352-11d035aa65de"
               alt="Ristorante"
             />
+
             <div className="gallery-overlay">
-              <h3>Ristorante</h3>
+
+              <h3>
+                {t('galleryRestaurant')}
+              </h3>
+
             </div>
+
           </div>
 
         </div>
@@ -224,52 +288,66 @@ function Home() {
         <div className="booking-box">
 
           <h2>
-            Richiedi un
-            <span> Preventivo</span>
+
+            {t('quoteTitle')}
+
+            <span>
+              {' '}
+              {t('quoteTitle2')}
+            </span>
+
           </h2>
 
           <p>
-            Compila il modulo e ti risponderemo
-            nel più breve tempo possibile
-            con la migliore offerta disponibile.
+            {t('quoteText')}
           </p>
 
           <form className="booking-form">
 
             <input
               type="text"
-              placeholder="Nome e Cognome"
+              placeholder={t('name')}
               required
             />
 
             <input
               type="email"
-              placeholder="Email"
+              placeholder={t('email')}
               required
             />
 
             <input
               type="tel"
-              placeholder="Telefono"
+              placeholder={t('phone')}
               required
             />
 
             <div className="contact-grid">
 
               <div>
-                <label>Data Arrivo</label>
+
+                <label>
+                  {t('arrival')}
+                </label>
+
                 <input
                   type="date"
                   required
                 />
+
               </div>
 
               <div>
-                <label>Data Partenza</label>
+
+                <label>
+                  {t('departure')}
+                </label>
+
                 <input
                   type="date"
                   required
                 />
+
               </div>
 
             </div>
@@ -277,33 +355,43 @@ function Home() {
             <div className="contact-grid">
 
               <div>
-                <label>Maggiorenni *</label>
+
+                <label>
+                  {t('adults')}
+                </label>
+
                 <input
                   type="number"
                   min="1"
                   defaultValue="1"
                   required
                 />
+
               </div>
 
               <div>
-                <label>Bambini</label>
+
+                <label>
+                  {t('kids')}
+                </label>
+
                 <input
                   type="number"
                   min="0"
                   defaultValue="0"
                 />
+
               </div>
 
             </div>
 
             <textarea
               rows="5"
-              placeholder="Messaggio o richieste speciali"
+              placeholder={t('message')}
             ></textarea>
 
             <button type="submit">
-              Richiedi Preventivo
+              {t('send')}
             </button>
 
           </form>
@@ -319,15 +407,18 @@ function Home() {
         <div className="cta-box">
 
           <h2>
-            Vivi Jesolo con
-            <span> Amalfi</span>
+
+            {t('ctaTitle')}
+
+            <span>
+              {' '}
+              {t('ctaTitle2')}
+            </span>
+
           </h2>
 
           <p>
-            Prenota direttamente
-            dal sito ufficiale
-            per ottenere
-            il miglior prezzo.
+            {t('ctaText')}
           </p>
 
           <div className="cta-buttons">
@@ -336,14 +427,14 @@ function Home() {
               to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Verifica Disponibilità
+              {t('availability')}
             </Link>
 
             <Link
               to="/arrivare"
               className="hero-outline dark"
             >
-              Contattaci
+              {t('contact')}
             </Link>
 
           </div>
@@ -353,8 +444,11 @@ function Home() {
       </section>
 
       <Footer />
+
     </>
+
   )
+
 }
 
 export default Home

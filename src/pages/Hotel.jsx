@@ -1,10 +1,13 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Hotel() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -26,13 +29,17 @@ function Hotel() {
 
             <h1>
 
-              Il Nostro
-              <span> Hotel</span>
+              {t('hotelHero')}
+
+              <span>
+                {' '}
+                {t('hotelHero2')}
+              </span>
 
             </h1>
 
             <p>
-              RELAX • COMFORT • JESOLO
+              {t('hotelMini')}
             </p>
 
           </div>
@@ -51,35 +58,27 @@ function Hotel() {
 
             <h2>
 
-              Benvenuti
-              all'
-              <span> Hotel Amalfi</span>
+              {t('hotelWelcome')}
+
+              <span>
+                {t('hotelWelcome2')}
+              </span>
 
             </h2>
 
             <p>
-
-              Hotel Amalfi è pensato
-              per offrire una vacanza
-              rilassante a pochi passi
-              dal mare di Jesolo.
-
+              {t('hotelText1')}
             </p>
 
             <p>
-
-              Atmosfera familiare,
-              servizi dedicati
-              e comfort moderno
-              per ogni soggiorno.
-
+              {t('hotelText2')}
             </p>
 
             <Link
               to="/camere"
               className="hero-btn"
             >
-              Scopri le Camere
+              {t('discoverRooms')}
             </Link>
 
           </div>
@@ -103,8 +102,12 @@ function Hotel() {
 
         <h2>
 
-          Servizi e
-          <span> Comfort</span>
+          {t('comfortTitle')}
+
+          <span>
+            {' '}
+            {t('comfortTitle2')}
+          </span>
 
         </h2>
 
@@ -113,14 +116,11 @@ function Hotel() {
           <div className="service-card">
 
             <h3>
-              Wi-Fi
+              {t('wifi')}
             </h3>
 
             <p>
-
-              Connessione gratuita
-              in tutta la struttura.
-
+              {t('wifiText')}
             </p>
 
           </div>
@@ -128,14 +128,11 @@ function Hotel() {
           <div className="service-card">
 
             <h3>
-              Spiaggia
+              {t('beach')}
             </h3>
 
             <p>
-
-              Posto spiaggia
-              incluso nei pacchetti.
-
+              {t('beachText')}
             </p>
 
           </div>
@@ -143,14 +140,11 @@ function Hotel() {
           <div className="service-card">
 
             <h3>
-              Parcheggio
+              {t('parking')}
             </h3>
 
             <p>
-
-              Disponibile secondo
-              disponibilità.
-
+              {t('parkingRuleText')}
             </p>
 
           </div>
@@ -162,10 +156,7 @@ function Hotel() {
             </h3>
 
             <p>
-
-              Cucina italiana,
-              buffet e relax.
-
+              {t('ristoText')}
             </p>
 
           </div>
@@ -174,14 +165,18 @@ function Hotel() {
 
       </section>
 
-      {/* REGOLAMENTO */}
+      {/* REGOLE */}
 
       <section className="rules-section">
 
         <h2>
 
-          Informazioni e
-          <span> Regolamento</span>
+          {t('rulesTitle')}
+
+          <span>
+            {' '}
+            {t('rulesTitle2')}
+          </span>
 
         </h2>
 
@@ -190,14 +185,11 @@ function Hotel() {
           <div className="rule-card">
 
             <h3>
-              Check-in / Check-out
+              {t('check')}
             </h3>
 
             <p>
-
-              Check-in dalle 14:00.
-              Check-out entro le 10:00.
-
+              {t('checkText')}
             </p>
 
           </div>
@@ -205,14 +197,11 @@ function Hotel() {
           <div className="rule-card">
 
             <h3>
-              Parcheggio
+              {t('parkingRule')}
             </h3>
 
             <p>
-
-              Disponibile secondo
-              disponibilità.
-
+              {t('parkingRuleText')}
             </p>
 
           </div>
@@ -220,14 +209,11 @@ function Hotel() {
           <div className="rule-card">
 
             <h3>
-              Pagamenti
+              {t('paymentsRule')}
             </h3>
 
             <p>
-
-              Carte, contanti
-              e bonifico.
-
+              {t('paymentsRuleText')}
             </p>
 
           </div>
@@ -244,34 +230,33 @@ function Hotel() {
 
           <h2>
 
-            Vivi Jesolo
-            con
-            <span> Amalfi</span>
+            {t('hotelCta')}
+
+            <span>
+              {' '}
+              {t('hotelCta2')}
+            </span>
 
           </h2>
 
           <p>
-
-            Prenota dal sito ufficiale
-            e ottieni le migliori
-            condizioni disponibili.
-
+            {t('hotelCtaText')}
           </p>
 
           <div className="cta-buttons">
 
             <Link
-              to="/prezzi"
+              to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Prenota Ora
+              {t('bookNow')}
             </Link>
 
             <Link
               to="/arrivare"
               className="hero-outline dark"
             >
-              Contattaci
+              {t('contact')}
             </Link>
 
           </div>

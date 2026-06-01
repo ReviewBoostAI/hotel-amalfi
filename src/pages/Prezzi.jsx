@@ -1,10 +1,13 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Prezzi() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -25,14 +28,15 @@ function Prezzi() {
             </span>
 
             <h1>
-
-              I Nostri
-              <span> Prezzi</span>
-
+              {t('pricesTitle')}
+              <span>
+                {' '}
+                {t('pricesTitle2')}
+              </span>
             </h1>
 
             <p>
-              MIGLIOR PREZZO GARANTITO
+              {t('bestPrice')}
             </p>
 
           </div>
@@ -46,8 +50,7 @@ function Prezzi() {
       <section className="booking-bar">
 
         <p>
-          Prenota dal sito ufficiale
-          per ottenere le migliori condizioni.
+          {t('bookingBar')}
         </p>
 
       </section>
@@ -58,37 +61,46 @@ function Prezzi() {
 
         <h2>
 
-          Scegli il tuo
-          <span> Pacchetto</span>
+          {t('choose')}
+
+          <span>
+            {' '}
+            {t('package')}
+          </span>
 
         </h2>
 
         <div className="cards">
 
-          {/* CAMERA E COLAZIONE */}
+          {/* B&B */}
 
           <div className="card">
 
             <div className="card-top">
 
               <h3>
-                CAMERA E COLAZIONE
+                {t('bb')}
               </h3>
 
               <p>
-
-                con SPIAGGIA
-                e PARCHEGGIO
-
+                {t('bbDesc')}
               </p>
 
             </div>
 
             <ul>
 
-              <li>✓ Colazione Inclusa</li>
-              <li>✓ Posto Spiaggia</li>
-              <li>✓ Parcheggio</li>
+              <li>
+                ✓ {t('breakfast')}
+              </li>
+
+              <li>
+                ✓ {t('beachPlace')}
+              </li>
+
+              <li>
+                ✓ {t('parking')}
+              </li>
 
             </ul>
 
@@ -96,36 +108,44 @@ function Prezzi() {
               to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Richiedi Preventivo
+              {t('quoteBtn')}
             </Link>
 
           </div>
 
-          {/* MEZZA PENSIONE */}
+          {/* HALF */}
 
           <div className="card featured">
 
             <div className="card-top">
 
               <h3>
-                MEZZA PENSIONE
+                {t('half')}
               </h3>
 
               <p>
-
-                con BEVANDE
-                e SPIAGGIA
-
+                {t('halfDesc')}
               </p>
 
             </div>
 
             <ul>
 
-              <li>✓ Colazione</li>
-              <li>✓ Cena Inclusa</li>
-              <li>✓ Spiaggia</li>
-              <li>✓ Parcheggio</li>
+              <li>
+                ✓ {t('breakfast')}
+              </li>
+
+              <li>
+                ✓ {t('dinner')}
+              </li>
+
+              <li>
+                ✓ {t('beach')}
+              </li>
+
+              <li>
+                ✓ {t('parking')}
+              </li>
 
             </ul>
 
@@ -133,37 +153,48 @@ function Prezzi() {
               to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Richiedi Preventivo
+              {t('quoteBtn')}
             </Link>
 
           </div>
 
-          {/* PENSIONE COMPLETA */}
+          {/* FULL */}
 
           <div className="card">
 
             <div className="card-top">
 
               <h3>
-                PENSIONE COMPLETA
+                {t('full')}
               </h3>
 
               <p>
-
-                con BEVANDE
-                e SPIAGGIA
-
+                {t('fullDesc')}
               </p>
 
             </div>
 
             <ul>
 
-              <li>✓ Colazione</li>
-              <li>✓ Pranzo</li>
-              <li>✓ Cena</li>
-              <li>✓ Spiaggia</li>
-              <li>✓ Parcheggio</li>
+              <li>
+                ✓ {t('breakfast')}
+              </li>
+
+              <li>
+                ✓ {t('lunch')}
+              </li>
+
+              <li>
+                ✓ {t('dinner')}
+              </li>
+
+              <li>
+                ✓ {t('beach')}
+              </li>
+
+              <li>
+                ✓ {t('parking')}
+              </li>
 
             </ul>
 
@@ -171,7 +202,7 @@ function Prezzi() {
               to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Richiedi Preventivo
+              {t('quoteBtn')}
             </Link>
 
           </div>
@@ -186,8 +217,12 @@ function Prezzi() {
 
         <h2>
 
-          Prezzi e
-          <span> Informazioni</span>
+          {t('infoTitle')}
+
+          <span>
+            {' '}
+            {t('infoTitle2')}
+          </span>
 
         </h2>
 
@@ -196,14 +231,11 @@ function Prezzi() {
           <div className="service-card">
 
             <h3>
-              Bassa Stagione
+              {t('low')}
             </h3>
 
             <p>
-
-              Tariffe dedicate
-              e soggiorni convenienti.
-
+              {t('lowText')}
             </p>
 
           </div>
@@ -211,14 +243,11 @@ function Prezzi() {
           <div className="service-card">
 
             <h3>
-              Alta Stagione
+              {t('high')}
             </h3>
 
             <p>
-
-              Disponibilità limitata
-              e pacchetti premium.
-
+              {t('highText')}
             </p>
 
           </div>
@@ -226,15 +255,11 @@ function Prezzi() {
           <div className="service-card">
 
             <h3>
-              Servizi Extra
+              {t('extra')}
             </h3>
 
             <p>
-
-              Spiaggia,
-              parcheggio
-              e richieste personalizzate.
-
+              {t('extraText')}
             </p>
 
           </div>
@@ -242,15 +267,11 @@ function Prezzi() {
           <div className="service-card">
 
             <h3>
-              Pagamenti
+              {t('payments')}
             </h3>
 
             <p>
-
-              Carte,
-              contanti
-              e bonifico.
-
+              {t('paymentsText')}
             </p>
 
           </div>
@@ -267,17 +288,17 @@ function Prezzi() {
 
           <h2>
 
-            Prenota al
-            <span> Miglior Prezzo</span>
+            {t('priceCta')}
+
+            <span>
+              {' '}
+              {t('priceCta2')}
+            </span>
 
           </h2>
 
           <p>
-
-            Contattaci direttamente
-            e ricevi il preventivo
-            migliore per il tuo soggiorno.
-
+            {t('priceText')}
           </p>
 
           <div className="cta-buttons">
@@ -286,14 +307,14 @@ function Prezzi() {
               to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Richiedi Preventivo
+              {t('quoteBtn')}
             </Link>
 
             <Link
               to="/arrivare"
               className="hero-outline dark"
             >
-              Contattaci
+              {t('contact')}
             </Link>
 
           </div>

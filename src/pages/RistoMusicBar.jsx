@@ -1,10 +1,13 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function RistoMusicBar() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -26,13 +29,17 @@ function RistoMusicBar() {
 
             <h1>
 
-              Risto
-              <span> Music Bar</span>
+              {t('ristoHero')}
+
+              <span>
+                {' '}
+                {t('ristoHero2')}
+              </span>
 
             </h1>
 
             <p>
-              GUSTO • RELAX • ATMOSFERA
+              {t('ristoMini')}
             </p>
 
           </div>
@@ -51,35 +58,28 @@ function RistoMusicBar() {
 
             <h2>
 
-              Sapori e
-              <span> Ospitalità</span>
+              {t('flavors')}
+
+              <span>
+                {' '}
+                {t('hospitality')}
+              </span>
 
             </h2>
 
             <p>
-
-              Il RistoMusicBar Amalfi
-              è uno spazio dedicato
-              alla convivialità,
-              alla cucina italiana
-              e ai momenti di relax.
-
+              {t('ristoIntro1')}
             </p>
 
             <p>
-
-              Colazioni ricche,
-              buffet e serate
-              in un'atmosfera elegante
-              e rilassata.
-
+              {t('ristoIntro2')}
             </p>
 
             <Link
-              to="/prezzi"
+              to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Prenota il Soggiorno
+              {t('bookStay')}
             </Link>
 
           </div>
@@ -103,8 +103,12 @@ function RistoMusicBar() {
 
         <h2>
 
-          Esperienze di
-          <span> Gusto</span>
+          {t('taste')}
+
+          <span>
+            {' '}
+            {t('taste2')}
+          </span>
 
         </h2>
 
@@ -120,15 +124,11 @@ function RistoMusicBar() {
             <div className="room-content">
 
               <h3>
-                Colazione Buffet
+                {t('buffetBreakfast')}
               </h3>
 
               <p>
-
-                Buffet dolce e salato
-                con prodotti freschi
-                e selezionati.
-
+                {t('buffetBreakfastText')}
               </p>
 
             </div>
@@ -145,15 +145,11 @@ function RistoMusicBar() {
             <div className="room-content">
 
               <h3>
-                Cucina Italiana
+                {t('italianCuisine')}
               </h3>
 
               <p>
-
-                Piatti ispirati
-                alla tradizione
-                mediterranea.
-
+                {t('italianCuisineText')}
               </p>
 
             </div>
@@ -170,14 +166,11 @@ function RistoMusicBar() {
             <div className="room-content">
 
               <h3>
-                Cocktail & Music
+                {t('cocktailMusic')}
               </h3>
 
               <p>
-
-                Relax e atmosfera
-                per serate speciali.
-
+                {t('cocktailMusicText')}
               </p>
 
             </div>
@@ -194,8 +187,12 @@ function RistoMusicBar() {
 
         <h2>
 
-          Grand
-          <span> Buffet</span>
+          {t('grand')}
+
+          <span>
+            {' '}
+            {t('buffet')}
+          </span>
 
         </h2>
 
@@ -204,14 +201,11 @@ function RistoMusicBar() {
           <div className="service-card">
 
             <h3>
-              Colazione
+              {t('breakfast2')}
             </h3>
 
             <p>
-
-              Buffet ricco
-              dolce e salato.
-
+              {t('breakfast2Text')}
             </p>
 
           </div>
@@ -219,14 +213,11 @@ function RistoMusicBar() {
           <div className="service-card">
 
             <h3>
-              Cucina
+              {t('kitchen')}
             </h3>
 
             <p>
-
-              Piatti italiani
-              e mediterranei.
-
+              {t('kitchenText')}
             </p>
 
           </div>
@@ -234,14 +225,11 @@ function RistoMusicBar() {
           <div className="service-card">
 
             <h3>
-              Aperitivi
+              {t('aperitif')}
             </h3>
 
             <p>
-
-              Cocktail e momenti
-              di relax.
-
+              {t('aperitifText')}
             </p>
 
           </div>
@@ -249,14 +237,11 @@ function RistoMusicBar() {
           <div className="service-card">
 
             <h3>
-              Music Bar
+              {t('musicBar')}
             </h3>
 
             <p>
-
-              Atmosfera elegante
-              e conviviale.
-
+              {t('musicBarText')}
             </p>
 
           </div>
@@ -273,35 +258,33 @@ function RistoMusicBar() {
 
           <h2>
 
-            Vivi il gusto
-            firmato
-            <span> Amalfi</span>
+            {t('tasteCta')}
+
+            <span>
+              {' '}
+              {t('tasteCta2')}
+            </span>
 
           </h2>
 
           <p>
-
-            Colazioni,
-            cucina italiana
-            e atmosfera unica
-            a Jesolo.
-
+            {t('tasteCtaText')}
           </p>
 
           <div className="cta-buttons">
 
             <Link
-              to="/prezzi"
+              to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Prenota Ora
+              {t('bookNow')}
             </Link>
 
             <Link
               to="/arrivare"
               className="hero-outline dark"
             >
-              Contattaci
+              {t('contact')}
             </Link>
 
           </div>

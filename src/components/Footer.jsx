@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 function Footer() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -17,7 +21,7 @@ function Footer() {
           </p>
 
           <p>
-            Relax • Mare • Comfort
+            {t('footerRelax')}
           </p>
 
         </div>
@@ -25,7 +29,7 @@ function Footer() {
         <div className="footer-col">
 
           <h4>
-            Contatti
+            {t('footerContacts')}
           </h4>
 
           <p>
@@ -46,7 +50,7 @@ function Footer() {
         <div className="footer-col">
 
           <h4>
-            Seguici
+            {t('follow')}
           </h4>
 
           <div className="socials">
@@ -72,13 +76,14 @@ function Footer() {
       <div className="footer-bottom">
 
         © 2026 Hotel Amalfi —
-        Tutti i diritti riservati
+        {t('rights')}
 
       </div>
 
     </footer>
 
   )
+
 }
 
 export default Footer

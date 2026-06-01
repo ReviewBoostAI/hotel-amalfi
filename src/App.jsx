@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Hotel from './pages/Hotel'
@@ -11,45 +11,42 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    <Routes>
 
-      <Routes>
+      <Route
+        path="/"
+        element={<Home />}
+      />
 
-        <Route
-          path="/"
-          element={<Home />}
-        />
+      <Route
+        path="/hotel"
+        element={<Hotel />}
+      />
 
-        <Route
-          path="/hotel"
-          element={<Hotel />}
-        />
+      <Route
+        path="/camere"
+        element={<Camere />}
+      />
 
-        <Route
-          path="/camere"
-          element={<Camere />}
-        />
+      <Route
+        path="/ristomusicbar"
+        element={<RistoMusicBar />}
+      />
 
-        <Route
-          path="/ristomusicbar"
-          element={<RistoMusicBar />}
-        />
+      <Route
+        path="/prezzi"
+        element={<Prezzi />}
+      />
 
-        <Route
-          path="/prezzi"
-          element={<Prezzi />}
-        />
+      <Route
+        path="/arrivare"
+        element={<Arrivare />}
+      />
 
-        <Route
-          path="/arrivare"
-          element={<Arrivare />}
-        />
-
-      </Routes>
-
-    </BrowserRouter>
+    </Routes>
 
   )
+
 }
 
 export default App

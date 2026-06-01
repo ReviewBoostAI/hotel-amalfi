@@ -1,9 +1,20 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Navbar() {
 
   const [menuOpen,setMenuOpen] = useState(false)
+
+  const {
+    t,
+    i18n
+  } = useTranslation()
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+    setMenuOpen(false)
+  }
 
   return (
 
@@ -36,39 +47,71 @@ function Navbar() {
       <div className="nav-links">
 
         <Link to="/">
-          Home
+          {t('home')}
         </Link>
 
         <Link to="/hotel">
-          Hotel
+          {t('hotel')}
         </Link>
 
         <Link to="/camere">
-          Camere
+          {t('camere')}
         </Link>
 
         <Link to="/ristomusicbar">
-          RistoMusicBar
+          {t('risto')}
         </Link>
 
         <Link to="/prezzi">
-          Prezzi
+          {t('prezzi')}
         </Link>
 
         <Link to="/arrivare">
-          Arrivare
+          {t('arrivare')}
         </Link>
 
       </div>
+
+      {/* DESKTOP LANG */}
+
+      <div className="lang-switch">
+
+        <button
+          onClick={() =>
+            changeLanguage('it')
+          }
+        >
+          IT
+        </button>
+
+        <button
+          onClick={() =>
+            changeLanguage('en')
+          }
+        >
+          EN
+        </button>
+
+        <button
+          onClick={() =>
+            changeLanguage('de')
+          }
+        >
+          DE
+        </button>
+
+      </div>
+
+      {/* PRENOTA */}
 
       <Link
         to="/?scroll=preventivo"
         className="nav-book-btn"
       >
-        Prenota
+        {t('prenota')}
       </Link>
 
-      {/* MOBILE HAMBURGER */}
+      {/* HAMBURGER */}
 
       <button
         className="hamburger"
@@ -78,6 +121,8 @@ function Navbar() {
       >
         ☰
       </button>
+
+      {/* MOBILE MENU */}
 
       <div
         className={
@@ -93,7 +138,7 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          Home
+          {t('home')}
         </Link>
 
         <Link
@@ -102,7 +147,7 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          Hotel
+          {t('hotel')}
         </Link>
 
         <Link
@@ -111,7 +156,7 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          Camere
+          {t('camere')}
         </Link>
 
         <Link
@@ -120,7 +165,7 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          RistoMusicBar
+          {t('risto')}
         </Link>
 
         <Link
@@ -129,7 +174,7 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          Prezzi
+          {t('prezzi')}
         </Link>
 
         <Link
@@ -138,7 +183,7 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          Arrivare
+          {t('arrivare')}
         </Link>
 
         <Link
@@ -147,8 +192,44 @@ function Navbar() {
             setMenuOpen(false)
           }
         >
-          Prenota
+          {t('prenota')}
         </Link>
+
+        <div className="mobile-lang">
+
+          <span>
+            Language
+          </span>
+
+          <div className="mobile-lang-buttons">
+
+            <button
+              onClick={() =>
+                changeLanguage('it')
+              }
+            >
+              IT
+            </button>
+
+            <button
+              onClick={() =>
+                changeLanguage('en')
+              }
+            >
+              EN
+            </button>
+
+            <button
+              onClick={() =>
+                changeLanguage('de')
+              }
+            >
+              DE
+            </button>
+
+          </div>
+
+        </div>
 
       </div>
 

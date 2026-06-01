@@ -1,10 +1,13 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Arrivare() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -26,13 +29,17 @@ function Arrivare() {
 
             <h1>
 
-              Come
-              <span> Arrivare</span>
+              {t('arriveHero')}
+
+              <span>
+                {' '}
+                {t('arriveHero2')}
+              </span>
 
             </h1>
 
             <p>
-              JESOLO • VENEZIA • RELAX
+              {t('arriveMini')}
             </p>
 
           </div>
@@ -51,8 +58,12 @@ function Arrivare() {
 
             <h2>
 
-              Contatti e
-              <span> Posizione</span>
+              {t('contacts')}
+
+              <span>
+                {' '}
+                {t('contacts2')}
+              </span>
 
             </h2>
 
@@ -80,7 +91,7 @@ function Arrivare() {
                 href="tel:+39000000000"
                 className="hero-btn"
               >
-                Chiama Ora
+                {t('callNow')}
               </a>
 
               <a
@@ -113,8 +124,12 @@ function Arrivare() {
 
         <h2>
 
-          Come
-          <span> Arrivare</span>
+          {t('how')}
+
+          <span>
+            {' '}
+            {t('how2')}
+          </span>
 
         </h2>
 
@@ -123,15 +138,11 @@ function Arrivare() {
           <div className="service-card">
 
             <h3>
-              In Auto
+              {t('car')}
             </h3>
 
             <p>
-
-              Autostrada A4,
-              uscita Noventa
-              direzione Jesolo.
-
+              {t('carText')}
             </p>
 
           </div>
@@ -139,14 +150,11 @@ function Arrivare() {
           <div className="service-card">
 
             <h3>
-              In Treno
+              {t('train')}
             </h3>
 
             <p>
-
-              Mestre o San Donà
-              con collegamento bus.
-
+              {t('trainText')}
             </p>
 
           </div>
@@ -154,14 +162,11 @@ function Arrivare() {
           <div className="service-card">
 
             <h3>
-              Aeroporto
+              {t('airport')}
             </h3>
 
             <p>
-
-              Venezia Marco Polo
-              a breve distanza.
-
+              {t('airportText')}
             </p>
 
           </div>
@@ -169,14 +174,11 @@ function Arrivare() {
           <div className="service-card">
 
             <h3>
-              Venezia
+              {t('venice')}
             </h3>
 
             <p>
-
-              Escursioni rapide
-              verso la laguna.
-
+              {t('veniceText')}
             </p>
 
           </div>
@@ -191,8 +193,12 @@ function Arrivare() {
 
         <h2>
 
-          Dove
-          <span> Siamo</span>
+          {t('where')}
+
+          <span>
+            {' '}
+            {t('where2')}
+          </span>
 
         </h2>
 
@@ -200,7 +206,7 @@ function Arrivare() {
 
           <iframe
             title="Hotel Amalfi Jesolo"
-            src="https://www.google.com/maps?q=Via+Giuseppe+Verdi+73+Lido+di+Jesolo&output=embed"
+            src="https://www.google.com/maps?q=Via+Giuseppe+Verdi+73+Jesolo&output=embed"
             width="100%"
             height="450"
             style={{ border:0 }}
@@ -220,34 +226,33 @@ function Arrivare() {
 
           <h2>
 
-            Ti aspettiamo
-            all'
-            <span> Hotel Amalfi</span>
+            {t('waiting')}
+
+            <span>
+              {' '}
+              {t('waiting2')}
+            </span>
 
           </h2>
 
           <p>
-
-            Organizza il tuo soggiorno
-            e vivi Jesolo
-            con comfort e relax.
-
+            {t('waitingText')}
           </p>
 
           <div className="cta-buttons">
 
             <Link
-              to="/prezzi"
+              to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Prenota Ora
+              {t('bookNow')}
             </Link>
 
             <a
               href="mailto:info@hotelamalfi.it"
               className="hero-outline dark"
             >
-              Contattaci
+              {t('contact')}
             </a>
 
           </div>

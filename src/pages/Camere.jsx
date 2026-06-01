@@ -1,10 +1,13 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Camere() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -26,13 +29,17 @@ function Camere() {
 
             <h1>
 
-              Le Nostre
-              <span> Camere</span>
+              {t('roomsHero')}
+
+              <span>
+                {' '}
+                {t('roomsHero2')}
+              </span>
 
             </h1>
 
             <p>
-              COMFORT • RELAX • JESOLO
+              {t('roomsMini')}
             </p>
 
           </div>
@@ -41,119 +48,107 @@ function Camere() {
 
       </section>
 
-      {/* ROOMS */}
+      {/* CAMERE */}
 
       <section className="rooms-section">
 
         <h2>
 
-          Tipologie di
-          <span> Camera</span>
+          {t('roomsHero')}
+
+          <span>
+            {' '}
+            {t('roomsHero2')}
+          </span>
 
         </h2>
 
         <div className="rooms-grid">
 
-          {/* DOPPIA */}
+          {/* CLASSIC */}
 
           <div className="room-card">
 
             <img
               src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
-              alt="Camera Doppia"
+              alt="Classic"
             />
 
             <div className="room-content">
 
               <h3>
-                Camera Doppia
+                {t('classic')}
               </h3>
 
               <p>
-
-                Camera elegante
-                con letto matrimoniale,
-                bagno privato,
-                aria condizionata
-                e balcone.
-
+                {t('classicText')}
               </p>
 
               <Link
-                to="/prezzi"
+                to="/?scroll=preventivo"
                 className="hero-btn"
               >
-                Vedi Prezzi
+                {t('discover')}
               </Link>
 
             </div>
 
           </div>
 
-          {/* TRIPLA */}
+          {/* COMFORT */}
 
           <div className="room-card">
 
             <img
               src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
-              alt="Camera Tripla"
+              alt="Comfort"
             />
 
             <div className="room-content">
 
               <h3>
-                Camera Tripla
+                {t('comfort')}
               </h3>
 
               <p>
-
-                Ideale per famiglie
-                o piccoli gruppi,
-                ampia e luminosa
-                con ogni comfort.
-
+                {t('comfortText')}
               </p>
 
               <Link
-                to="/prezzi"
+                to="/?scroll=preventivo"
                 className="hero-btn"
               >
-                Vedi Prezzi
+                {t('discover')}
               </Link>
 
             </div>
 
           </div>
 
-          {/* QUADRUPLA */}
+          {/* SUPERIOR */}
 
           <div className="room-card">
 
             <img
-              src="https://images.unsplash.com/photo-1566665797739-1674de7a421a"
-              alt="Camera Quadrupla"
+              src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c"
+              alt="Superior"
             />
 
             <div className="room-content">
 
               <h3>
-                Camera Quadrupla
+                {t('superior')}
               </h3>
 
               <p>
-
-                Spazio e comodità
-                per tutta la famiglia
-                con ambienti curati
-                e atmosfera rilassante.
-
+                {t('superiorText')}
               </p>
 
               <Link
-                to="/prezzi"
+                to="/?scroll=preventivo"
                 className="hero-btn"
               >
-                Vedi Prezzi
+                {t('discover')}
               </Link>
 
             </div>
@@ -164,120 +159,41 @@ function Camere() {
 
       </section>
 
-      {/* PACCHETTI */}
+      {/* CTA */}
 
-      <section className="packages">
+      <section className="cta-section">
 
-        <h2>
+        <div className="cta-box">
 
-          Pacchetti di
-          <span> Soggiorno</span>
+          <h2>
 
-        </h2>
+            {t('roomsCta')}
 
-        <div className="cards">
+            <span>
+              {' '}
+              {t('roomsCta2')}
+            </span>
 
-          <div className="card">
+          </h2>
 
-            <div className="card-top">
+          <p>
+            {t('roomsCtaText')}
+          </p>
 
-              <h3>
-                CAMERA E COLAZIONE
-              </h3>
-
-              <p>
-
-                con SPIAGGIA
-                e PARCHEGGIO
-
-              </p>
-
-            </div>
-
-            <ul>
-
-              <li>✓ Colazione</li>
-              <li>✓ Spiaggia</li>
-              <li>✓ Parcheggio</li>
-
-            </ul>
+          <div className="cta-buttons">
 
             <Link
-              to="/prezzi"
+              to="/?scroll=preventivo"
               className="hero-btn"
             >
-              Vedi Prezzi
+              {t('bookNow')}
             </Link>
 
-          </div>
-
-          <div className="card featured">
-
-            <div className="card-top">
-
-              <h3>
-                MEZZA PENSIONE
-              </h3>
-
-              <p>
-
-                con BEVANDE
-                INCLUSE
-
-              </p>
-
-            </div>
-
-            <ul>
-
-              <li>✓ Colazione</li>
-              <li>✓ Cena</li>
-              <li>✓ Spiaggia</li>
-              <li>✓ Parcheggio</li>
-
-            </ul>
-
             <Link
-              to="/prezzi"
-              className="hero-btn"
+              to="/arrivare"
+              className="hero-outline dark"
             >
-              Vedi Prezzi
-            </Link>
-
-          </div>
-
-          <div className="card">
-
-            <div className="card-top">
-
-              <h3>
-                PENSIONE COMPLETA
-              </h3>
-
-              <p>
-
-                con BEVANDE
-                INCLUSE
-
-              </p>
-
-            </div>
-
-            <ul>
-
-              <li>✓ Colazione</li>
-              <li>✓ Pranzo</li>
-              <li>✓ Cena</li>
-              <li>✓ Spiaggia</li>
-              <li>✓ Parcheggio</li>
-
-            </ul>
-
-            <Link
-              to="/prezzi"
-              className="hero-btn"
-            >
-              Vedi Prezzi
+              {t('contact')}
             </Link>
 
           </div>
