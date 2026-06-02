@@ -63,6 +63,8 @@ i18n
           galleryRooms:'Camere',
           galleryRestaurant:'Ristorante',
 
+          /* PREVENTIVO */
+
           quoteTitle:'Richiedi un',
           quoteTitle2:'Preventivo',
 
@@ -77,6 +79,12 @@ i18n
 
           adults:'Maggiorenni',
           kids:'Bambini',
+
+          treatment:'Trattamento Richiesto',
+
+          bbOption:'Camera e Colazione',
+          hbOption:'Mezza Pensione',
+          fbOption:'Pensione Completa',
 
           message:'Messaggio o richieste speciali',
 
@@ -343,6 +351,8 @@ i18n
           galleryRooms:'Rooms',
           galleryRestaurant:'Restaurant',
 
+          /* QUOTE */
+
           quoteTitle:'Request a',
           quoteTitle2:'Quote',
 
@@ -357,6 +367,12 @@ i18n
 
           adults:'Adults',
           kids:'Children',
+
+          treatment:'Board Type',
+
+          bbOption:'Bed & Breakfast',
+          hbOption:'Half Board',
+          fbOption:'Full Board',
 
           message:'Message or special requests',
 
@@ -417,8 +433,7 @@ i18n
           priceCta2:'Best Price',
 
           priceText:'Contact us directly and receive the best quote for your stay.',
-
-          /* HOTEL */
+                    /* HOTEL */
 
           hotelHero:'Our',
           hotelHero2:'Hotel',
@@ -457,6 +472,138 @@ i18n
           hotelCtaText:'Book from the official website and get the best available conditions.',
 
           bookNow:'Book Now',
+
+          /* ================= DE ================= */
+
+      de:{
+        translation:{
+
+          /* NAVBAR */
+
+          home:'Startseite',
+          hotel:'Hotel',
+          camere:'Zimmer',
+          risto:'RistoMusicBar',
+          prezzi:'Preise',
+          arrivare:'Anreise',
+          prenota:'Buchen',
+
+          /* HOME */
+
+          heroTitle:'Hotel',
+          heroLocation:'JESOLO • VENEDIG',
+          heroBook:'Bestpreis buchen',
+          heroDiscover:'Hotel entdecken',
+
+          welcomeTitle:'Willkommen im',
+          welcomeHotel:'Hotel Amalfi',
+
+          welcomeText:'Ein gemütliches Hotel im Herzen von Jesolo, perfekt für Urlaub mit Meer, Entspannung und italienischer Gastfreundschaft.',
+
+          services:'Unsere',
+          services2:'Dienstleistungen',
+
+          wifi:'Wi-Fi',
+          wifiText:'Kostenloses WLAN im gesamten Hotel.',
+
+          beach:'Strand',
+          beachText:'Strandplatz im Paket enthalten.',
+
+          parking:'Parkplatz',
+          parkingText:'Für Hotelgäste verfügbar.',
+
+          restaurant:'Restaurant',
+          restaurantText:'Italienische Küche und entspannte Atmosphäre.',
+
+          gallery:'Entdecke',
+          gallery2:'Amalfi',
+
+          galleryHotel:'Hotel',
+          galleryRooms:'Zimmer',
+          galleryRestaurant:'Restaurant',
+
+          /* PREVENTIVO */
+
+          quoteTitle:'Angebot',
+          quoteTitle2:'Anfragen',
+
+          quoteText:'Füllen Sie das Formular aus und wir antworten schnellstmöglich mit dem besten Angebot.',
+
+          name:'Vor- und Nachname',
+          email:'E-Mail',
+          phone:'Telefon',
+
+          arrival:'Anreise',
+          departure:'Abreise',
+
+          adults:'Erwachsene',
+          kids:'Kinder',
+
+          treatment:'Verpflegung',
+
+          bbOption:'Zimmer mit Frühstück',
+          hbOption:'Halbpension',
+          fbOption:'Vollpension',
+
+          message:'Nachricht oder Sonderwünsche',
+
+          send:'Angebot anfragen',
+
+          ctaTitle:'Erleben Sie Jesolo mit',
+          ctaTitle2:'Amalfi',
+
+          ctaText:'Buchen Sie direkt auf der offiziellen Website zum besten Preis.',
+
+          availability:'Verfügbarkeit prüfen',
+          contact:'Kontakt',
+
+          /* PREZZI */
+
+          pricesTitle:'Unsere',
+          pricesTitle2:'Preise',
+
+          bestPrice:'BESTPREIS GARANTIERT',
+
+          bookingBar:'Buchen Sie direkt über die offizielle Website.',
+
+          choose:'Wählen Sie Ihr',
+          package:'Paket',
+
+          bb:'ZIMMER MIT FRÜHSTÜCK',
+          bbDesc:'mit STRAND und PARKPLATZ',
+
+          half:'HALBPENSION',
+          halfDesc:'mit GETRÄNKEN und STRAND',
+
+          full:'VOLLPENSION',
+          fullDesc:'mit GETRÄNKEN und STRAND',
+
+          breakfast:'Frühstück inklusive',
+          beachPlace:'Strandplatz',
+          dinner:'Abendessen inklusive',
+          lunch:'Mittagessen',
+
+          quoteBtn:'Angebot anfragen',
+
+          infoTitle:'Preise und',
+          infoTitle2:'Informationen',
+
+          low:'Nebensaison',
+          lowText:'Sonderpreise und günstige Aufenthalte.',
+
+          high:'Hochsaison',
+          highText:'Begrenzte Verfügbarkeit und Premiumangebote.',
+
+          extra:'Zusatzleistungen',
+          extraText:'Strand, Parkplatz und Sonderwünsche.',
+
+          payments:'Zahlungen',
+          paymentsText:'Karten, Bargeld und Überweisung.',
+
+          priceCta:'Buchen zum',
+          priceCta2:'Bestpreis',
+
+          priceText:'Kontaktieren Sie uns direkt für das beste Angebot.',
                     /* CAMERE */
 
           roomsHero:'Our',
@@ -575,129 +722,10 @@ i18n
         }
       },
 
-      /* ================= DE ================= */
+      /* ================= DE RESTANTE ================= */
 
       de:{
         translation:{
-
-          /* NAVBAR */
-
-          home:'Startseite',
-          hotel:'Hotel',
-          camere:'Zimmer',
-          risto:'RistoMusicBar',
-          prezzi:'Preise',
-          arrivare:'Anreise',
-          prenota:'Buchen',
-
-          /* HOME */
-
-          heroTitle:'Hotel',
-          heroLocation:'JESOLO • VENEDIG',
-          heroBook:'Bestpreis buchen',
-          heroDiscover:'Hotel entdecken',
-
-          welcomeTitle:'Willkommen im',
-          welcomeHotel:'Hotel Amalfi',
-
-          welcomeText:'Ein gemütliches Hotel im Herzen von Jesolo, perfekt für Urlaub mit Meer, Entspannung und italienischer Gastfreundschaft.',
-
-          services:'Unsere',
-          services2:'Dienstleistungen',
-
-          wifi:'Wi-Fi',
-          wifiText:'Kostenloses WLAN im gesamten Hotel.',
-
-          beach:'Strand',
-          beachText:'Strandplatz im Paket enthalten.',
-
-          parking:'Parkplatz',
-          parkingText:'Für Hotelgäste verfügbar.',
-
-          restaurant:'Restaurant',
-          restaurantText:'Italienische Küche und entspannte Atmosphäre.',
-
-          gallery:'Entdecke',
-          gallery2:'Amalfi',
-
-          galleryHotel:'Hotel',
-          galleryRooms:'Zimmer',
-          galleryRestaurant:'Restaurant',
-
-          quoteTitle:'Angebot',
-          quoteTitle2:'Anfragen',
-
-          quoteText:'Füllen Sie das Formular aus und wir antworten schnellstmöglich mit dem besten Angebot.',
-
-          name:'Vor- und Nachname',
-          email:'E-Mail',
-          phone:'Telefon',
-
-          arrival:'Anreise',
-          departure:'Abreise',
-
-          adults:'Erwachsene',
-          kids:'Kinder',
-
-          message:'Nachricht oder Sonderwünsche',
-
-          send:'Angebot anfragen',
-
-          ctaTitle:'Erleben Sie Jesolo mit',
-          ctaTitle2:'Amalfi',
-
-          ctaText:'Buchen Sie direkt auf der offiziellen Website zum besten Preis.',
-
-          availability:'Verfügbarkeit prüfen',
-          contact:'Kontakt',
-
-          /* PREISE */
-
-          pricesTitle:'Unsere',
-          pricesTitle2:'Preise',
-
-          bestPrice:'BESTPREIS GARANTIERT',
-
-          bookingBar:'Buchen Sie direkt über die offizielle Website.',
-
-          choose:'Wählen Sie Ihr',
-          package:'Paket',
-
-          bb:'ZIMMER MIT FRÜHSTÜCK',
-          bbDesc:'mit STRAND und PARKPLATZ',
-
-          half:'HALBPENSION',
-          halfDesc:'mit GETRÄNKEN und STRAND',
-
-          full:'VOLLPENSION',
-          fullDesc:'mit GETRÄNKEN und STRAND',
-
-          breakfast:'Frühstück inklusive',
-          beachPlace:'Strandplatz',
-          dinner:'Abendessen inklusive',
-          lunch:'Mittagessen',
-
-          quoteBtn:'Angebot anfragen',
-
-          infoTitle:'Preise und',
-          infoTitle2:'Informationen',
-
-          low:'Nebensaison',
-          lowText:'Sonderpreise und günstige Aufenthalte.',
-
-          high:'Hochsaison',
-          highText:'Begrenzte Verfügbarkeit und Premiumangebote.',
-
-          extra:'Zusatzleistungen',
-          extraText:'Strand, Parkplatz und Sonderwünsche.',
-
-          payments:'Zahlungen',
-          paymentsText:'Karten, Bargeld und Überweisung.',
-
-          priceCta:'Buchen zum',
-          priceCta2:'Bestpreis',
-
-          priceText:'Kontaktieren Sie uns direkt für das beste Angebot.',
 
           /* HOTEL */
 
@@ -705,7 +733,8 @@ i18n
           hotelHero2:'Hotel',
 
           hotelMini:'RELAX • KOMFORT • JESOLO',
-                    hotelWelcome:'Willkommen im',
+
+          hotelWelcome:'Willkommen im',
           hotelWelcome2:'Hotel Amalfi',
 
           hotelText1:'Hotel Amalfi wurde geschaffen, um einen entspannten Urlaub nur wenige Schritte vom Meer in Jesolo zu bieten.',
@@ -859,5 +888,5 @@ i18n
     }
 
   })
-
+  
 export default i18n

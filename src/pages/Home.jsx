@@ -72,8 +72,14 @@ function Home() {
             </span>
 
             <h1>
+
               {t('heroTitle')}
-              <span> Amalfi</span>
+
+              <span>
+                {' '}
+                Amalfi
+              </span>
+
             </h1>
 
             <p>
@@ -205,8 +211,7 @@ function Home() {
         </div>
 
       </section>
-
-      {/* GALLERY */}
+            {/* GALLERY */}
 
       <section className="gallery-section">
 
@@ -382,33 +387,43 @@ function Home() {
                 />
 
               </div>
-<select className="quote-input">
 
-  <option value="">
-    Trattamento Richiesto
-  </option>
-
-  <option>
-    Camera e Colazione
-  </option>
-
-  <option>
-    Mezza Pensione
-  </option>
-
-  <option>
-    Pensione Completa
-  </option>
-
-</select>
             </div>
+
+            {/* TRATTAMENTO */}
+
+            <label>
+              {t('treatment')}
+            </label>
+
+            <select
+              className="quote-input"
+              required
+            >
+
+              <option value="">
+                {t('treatment')}
+              </option>
+
+              <option>
+                {t('bbOption')}
+              </option>
+
+              <option>
+                {t('hbOption')}
+              </option>
+
+              <option>
+                {t('fbOption')}
+              </option>
+
+            </select>
 
             <textarea
               rows="5"
               placeholder={t('message')}
             ></textarea>
-
-            <button type="submit">
+                        <button type="submit">
               {t('send')}
             </button>
 
