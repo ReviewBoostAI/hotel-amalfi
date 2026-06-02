@@ -382,7 +382,25 @@ function Home() {
                 />
 
               </div>
+<select className="quote-input">
 
+  <option value="">
+    Trattamento Richiesto
+  </option>
+
+  <option>
+    Camera e Colazione
+  </option>
+
+  <option>
+    Mezza Pensione
+  </option>
+
+  <option>
+    Pensione Completa
+  </option>
+
+</select>
             </div>
 
             <textarea
