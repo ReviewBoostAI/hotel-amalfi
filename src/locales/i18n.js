@@ -733,6 +733,53 @@ roomsCta2:'Zimmer',
 
 roomsCtaText:'Entdecken Sie die ideale Lösung für Ihren Aufenthalt in Jesolo.',
 
+/* PREZZI */
+
+pricesTitle:'Unsere',
+pricesTitle2:'Preise',
+
+bestPrice:'BESTPREIS GARANTIERT',
+
+bookingBar:'Buchen Sie direkt auf der offiziellen Website, um die besten Konditionen zu erhalten.',
+
+choose:'Wählen Sie Ihr',
+package:'Paket',
+
+bb:'ZIMMER MIT FRÜHSTÜCK',
+bbDesc:'mit STRAND und PARKPLATZ',
+
+half:'HALBPENSION',
+halfDesc:'mit GETRÄNKEN und STRAND',
+
+full:'VOLLPENSION',
+fullDesc:'mit GETRÄNKEN und STRAND',
+
+breakfast:'Frühstück inklusive',
+beachPlace:'Strandplatz',
+dinner:'Abendessen inklusive',
+lunch:'Mittagessen',
+
+quoteBtn:'Angebot anfragen',
+
+infoTitle:'Preise und',
+infoTitle2:'Informationen',
+
+low:'Nebensaison',
+lowText:'Spezielle Tarife und günstige Aufenthalte.',
+
+high:'Hochsaison',
+highText:'Begrenzte Verfügbarkeit und Premium-Pakete.',
+
+extra:'Zusatzleistungen',
+extraText:'Strand, Parkplatz und individuelle Wünsche.',
+
+payments:'Zahlungen',
+paymentsText:'Karten, Bargeld und Banküberweisung.',
+
+priceCta:'Buchen Sie zum',
+priceCta2:'Bestpreis',
+
+priceText:'Kontaktieren Sie uns direkt und erhalten Sie das beste Angebot für Ihren Aufenthalt.',
 /* ARRIVARE */
 
 arriveHero:'Anreise',
