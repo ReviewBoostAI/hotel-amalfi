@@ -670,6 +670,151 @@ i18n
           availability:'Verfügbarkeit prüfen',
           contact:'Kontakt',
 
+          /* HOTEL */
+
+hotelHero:'Unser',
+hotelHero2:'Hotel',
+
+hotelMini:'RELAX • KOMFORT • JESOLO',
+
+hotelWelcome:'Willkommen im',
+hotelWelcome2:'Hotel Amalfi',
+
+hotelText1:'Hotel Amalfi wurde geschaffen, um einen entspannten Urlaub nur wenige Schritte vom Meer in Jesolo zu bieten.',
+
+hotelText2:'Familiäre Atmosphäre, besondere Services und moderner Komfort für jeden Aufenthalt.',
+
+discoverRooms:'Zimmer entdecken',
+
+comfortTitle:'Service und',
+comfortTitle2:'Komfort',
+
+ristoText:'Italienische Küche, Buffet und Entspannung.',
+
+rulesTitle:'Informationen und',
+rulesTitle2:'Regeln',
+
+check:'Check-in / Check-out',
+checkText:'Check-in ab 14:00 Uhr. Check-out bis 10:00 Uhr.',
+
+parkingRule:'Parkplatz',
+parkingRuleText:'Je nach Verfügbarkeit verfügbar.',
+
+paymentsRule:'Zahlungen',
+paymentsRuleText:'Karten, Bargeld und Überweisung.',
+
+hotelCta:'Erleben Sie Jesolo mit',
+hotelCta2:'Amalfi',
+
+hotelCtaText:'Buchen Sie direkt über die offizielle Website und erhalten Sie die besten Bedingungen.',
+
+bookNow:'Jetzt buchen',
+
+/* CAMERE */
+
+roomsHero:'Unsere',
+roomsHero2:'Zimmer',
+
+roomsMini:'RELAX • KOMFORT • MEER',
+
+classic:'Classic Zimmer',
+classicText:'Gemütlich und hell, perfekt für entspannte Aufenthalte.',
+
+comfort:'Comfort Zimmer',
+comfortText:'Mehr Platz und Komfort für Familien und Paare.',
+
+superior:'Superior Zimmer',
+superiorText:'Eleganz und Premium-Komfort nahe am Meer.',
+
+discover:'Entdecken',
+
+roomsCta:'Finden Sie Ihr',
+roomsCta2:'Zimmer',
+
+roomsCtaText:'Entdecken Sie die ideale Lösung für Ihren Aufenthalt in Jesolo.',
+
+/* ARRIVARE */
+
+arriveHero:'Anreise',
+arriveHero2:'Info',
+
+arriveMini:'JESOLO • VENEDIG • RELAX',
+
+contacts:'Kontakte und',
+contacts2:'Lage',
+
+callNow:'Jetzt anrufen',
+
+how:'Anreise',
+how2:'Möglichkeiten',
+
+car:'Mit dem Auto',
+carText:'Autobahn A4, Ausfahrt Noventa Richtung Jesolo.',
+
+train:'Mit dem Zug',
+trainText:'Mestre oder San Donà mit Busverbindung.',
+
+airport:'Flughafen',
+airportText:'Venedig Marco Polo in kurzer Entfernung.',
+
+venice:'Venedig',
+veniceText:'Schnelle Ausflüge zur Lagune.',
+
+where:'Wo',
+where2:'Wir sind',
+
+waiting:'Wir erwarten Sie im',
+waiting2:'Hotel Amalfi',
+
+waitingText:'Planen Sie Ihren Aufenthalt und erleben Sie Jesolo mit Komfort und Entspannung.',
+
+/* RISTOMUSICBAR */
+
+ristoHero:'Risto',
+ristoHero2:'Music Bar',
+
+ristoMini:'GESCHMACK • RELAX • ATMOSPHÄRE',
+
+flavors:'Geschmack und',
+hospitality:'Gastfreundschaft',
+
+ristoIntro1:'Das RistoMusicBar Amalfi ist ein Ort für Geselligkeit, italienische Küche und entspannte Momente.',
+
+ristoIntro2:'Reiches Frühstück, Buffet und Abende in eleganter Atmosphäre.',
+
+bookStay:'Aufenthalt buchen',
+
+taste:'Geschmacks',
+taste2:'Erlebnisse',
+
+buffetBreakfast:'Frühstücksbuffet',
+buffetBreakfastText:'Süßes und herzhaftes Buffet mit frischen Produkten.',
+
+italianCuisine:'Italienische Küche',
+italianCuisineText:'Gerichte inspiriert von der mediterranen Tradition.',
+
+cocktailMusic:'Cocktail & Musik',
+cocktailMusicText:'Entspannung und Atmosphäre für besondere Abende.',
+
+grand:'Grand',
+buffet:'Buffet',
+
+breakfast2:'Frühstück',
+breakfast2Text:'Reiches süßes und herzhaftes Buffet.',
+
+kitchen:'Küche',
+kitchenText:'Italienische und mediterrane Gerichte.',
+
+aperitif:'Aperitifs',
+aperitifText:'Cocktails und Entspannung.',
+
+musicBar:'Music Bar',
+musicBarText:'Elegante und gesellige Atmosphäre.',
+
+tasteCta:'Erleben Sie den Geschmack von',
+tasteCta2:'Amalfi',
+
+tasteCtaText:'Frühstück, italienische Küche und einzigartige Atmosphäre in Jesolo.',
           footerRelax:'Relax • Meer • Komfort',
           footerContacts:'Kontakte',
           follow:'Folgen Sie uns',
